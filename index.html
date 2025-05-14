@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ElectroHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ElectroHub</h1>
+    <p>Your trusted electronics store</p>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Available Products</h2>
+      <div class="product">
+        <h3>Iphone 12 pro Glass Protector </h3>
+        <p>Price: 200 BDT</p>
+        <button onclick="buyProduct('Iphone 12 pro Glass Protector', 200)">Buy Now</button>
+      </div>
+      <div class="product">
+        <h3>Samsung A15 Glass Protector</h3>
+        <p>Price: 150 BDT</p>
+        <button onclick="buyProduct('Samsung A15 Glass Protector', 150)">Buy Now</button>
+      </div>
+    </section>
+
+    <section id="payment">
+      <h2>Payment Instructions</h2>
+      <p>Send payment to our bKash merchant number: <strong>01799825687</strong></p>
+      <p>After sending payment, enter your transaction ID below.</p>
+      <input type="text" id="trxId" placeholder="Enter bKash Transaction ID">
+      <button onclick="submitPayment()">Submit</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us: electrohubbd@gmail.com | Dhaka, Bangladesh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
